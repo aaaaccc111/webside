@@ -39,13 +39,90 @@
       </div>
     </section>
 
-    <section id="about-me" class="py-24 bg-slate-50/50" data-aos="fade-right"">
-      <div class="max-w-4xl mx-auto px-6">
+    <section id="about-me" class="py-24 bg-slate-50/50" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6">
         <h3 class="text-3xl font-bold mb-8 text-center">關於我</h3>
-        <div class="bg-white p-10 rounded-3xl shadow-sm leading-loose text-slate-600 italic">
-          「擁有6年橫跨軟硬體領域經驗，近4年專注於應用程式及全端開發，並能獨立主導企業內部系統從需求分析、架構設計至部署的「 0 到 1 」完整過程 。」
+
+        <div
+        @click="toggleModal"
+        class="bg-white p-10 rounded-3xl shadow-sm leading-loose text-slate-600 italic cursor-pointer hover:shadow-md hover:border-cyan-200 border border-transparent transition-all group"
+        >
+        「擁有6年橫跨軟硬體領域經驗，近4年專注於應用程式及全端開發，並能獨立主導企業內部系統從需求分析、架構設計至部署的「 0 到 1 」完整過程 。」
+        <p class="text-xs text-cyan-500 mt-4 text-right not-italic opacity-50 group-hover:opacity-100">查看完整自傳 →</p>
         </div>
-      </div>
+    </div>
+
+    <Teleport to="body">
+    <Transition name="fade">
+        <div v-if="isModalOpen" class="fixed inset-0 z-[100] flex items-center justify-center p-6">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" @click="toggleModal"></div>
+
+        <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-3xl shadow-2xl z-10 overflow-hidden flex flex-col">
+            <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-white sticky top-0 z-20">
+            <button @click="toggleModal" class="text-slate-400 hover:text-slate-600 text-3xl transition-colors">&times;</button>
+            </div>
+
+            <div class="p-8 overflow-y-auto text-slate-600 leading-relaxed">
+            <div class="space-y-6">
+                <p>
+                嗨，我是 <span class="text-cyan-600 font-bold">Hunter</span>，畢業於國立勤益科技大學資訊工程系。
+                </p>
+                <p>
+                擁有超過 6 年跨領域實務資歷，職涯由硬體研發起步，現專注於全端系統開發與軟體自動化的應用。我具備獨立主導「0 到 1」系統開發的完整實力，能準確將商業需求轉化為高效能的數位化系統。
+                </p>
+
+                <p>
+                在先前擔任兩年的硬體工程師中
+                </p>
+                <hr class="border-slate-100" />
+                <div>
+                <ul class="space-y-2 pl-4 border-l-2 border-slate-100">
+                    <li>• 負責驗票機電路板的檢修與電路的設計規劃，並參與到了完整的驗票機開發流程、程式驗證、程式測試、軟體自動化程式檢修以及客戶端的售後服務。</li>
+                    <li>• 取得無線通訊技術、點對點的串列通訊協定、網際網路協議等相關專業知識與技能。</li>
+                </ul>
+                </div>
+
+                <p>
+                也因為接觸到了這種精密設備，培養了我從底層架構分析問題的邏輯思維。之後便帶著這些深厚的硬體實務經驗，重返校園完成四年的資訊工程學業，將思維從硬體架構擴展至軟體架構。
+                </p>
+
+                <p>
+                就讀大學四年期間，我在現職公司擔任助理工程師，從早期的電腦檢修到現在的程式設計，並獨立主導多項數位化系統專案：
+                </p>
+                <hr class="border-slate-100" />
+                <div>
+                <ul class="space-y-2 pl-4 border-l-2 border-slate-100">
+                    <li>• 結合大學專題的軟體使用紀錄系統，可用於紀錄軟體使用狀態、計算軟體使用成本、透明化軟體使用財務經費、開源節流。</li>
+                    <li>• 接連完成專案工時系統、 PriceBook 系統，有效達成研發部門研發成本透明化、大幅降低人工計算成本、工時支出比及財務健全、零件成本透明化、歷年零件支出比、毛利率等。</li>
+                    <li>• 開發具有資安防護的鎖網卡工具、可以提升開發單位工作效率的管理工具、分散使用者的遠端連線工具。</li>
+
+                </ul>
+                </div>
+
+                <p>
+                也因此獲得單位主管的認同與期盼，並於在職期間持續學習相關專業知識及開發工具，並持續提供最優的解決方案。
+                </p>
+
+                <p>
+                在學期間，除了充分學習本業相關專業知識，也於課外時間做小型專案（Side Project）、包括社會議題探討、數據分析等，並閱讀自己感興趣的書本，提升自己的價值。
+                </p>
+                <p>
+                在這六年的職涯，我同時具備「硬體結構」與「軟體開發」的雙重背景，能跨技術進行高效的溝通，更能從系統整體的穩定性與可落地性進行思考。也於課外時間積極精進語文能力與程式語言等相關專業知識，期待能將過往跨領域的整合經驗帶入貴團隊，為企業提供最好的解決方案。
+                </p>
+
+                <p class="font-bold text-slate-800">謝謝。</p>
+            </div>
+            </div>
+
+            <!-- <div class="p-6 bg-slate-50 border-t border-slate-100 text-right">
+            <button @click="toggleModal" class="px-8 py-2 bg-slate-800 text-white rounded-full hover:bg-slate-700 transition-all shadow-sm">
+                關閉
+            </button>
+            </div> -->
+        </div>
+        </div>
+    </Transition>
+    </Teleport>
     </section>
 
     <section id="education" class="py-24 bg-white" data-aos="fade-right">
@@ -251,10 +328,11 @@
 
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const isModalOpen = ref(false);
 
 onMounted(() => {
   AOS.init({
@@ -264,6 +342,11 @@ onMounted(() => {
     offset: 100,
   });
 });
+
+const toggleModal = () => {
+  isModalOpen.value = !isModalOpen.value;
+  document.body.style.overflow = isModalOpen.value ? 'hidden' : 'auto';
+};
 
 const scrollTo = (id) => {
   const element = document.getElementById(id);
