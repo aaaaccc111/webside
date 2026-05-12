@@ -15,7 +15,6 @@
           Hunter Yin
         </h1>
 
-
         <div class="flex flex-wrap gap-4 justify-center mt-12 max-w-5xl mx-auto">
           <button @click="scrollTo('about-me')" class="px-6 py-3 rounded-2xl border border-slate-200 text-slate-600 hover:border-cyan-500 hover:text-cyan-600 transition duration-300 font-semibold hover:scale-105 bg-white/50 backdrop-blur-md">
             關於我
@@ -146,7 +145,7 @@
         <div class="space-y-16">
           <div class="relative pl-8 border-l border-slate-200" data-aos="fade-up">
             <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-[8.5px] top-1"></div>
-            <h4 class="text-xl font-bold">助理工程師 | ＯＯ股份有限公司 | 資訊部 | 其他電子零組件相關業</h4>
+            <h4 class="text-xl font-bold">助理工程師 | ＯＯ股份有限公司 |  其他電子零組件相關業</h4>
             <p class="text-slate-500 text-sm mb-4">2022年10月 - 至今 | 3年8個月</p>
             <ul class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed">
               <li>主導三套內部系統開發，從需求分析、系統架構、程式撰寫、部屬完整的 SDLC 流程</li>
