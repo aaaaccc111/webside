@@ -1,5 +1,6 @@
 <template>
   <main class="bg-white min-h-screen text-slate-900 font-sans">
+    <div id="google_translate_element"></div>
 
     <section class="relative min-h-screen overflow-hidden flex items-center justify-center">
       <div class="absolute w-[700px] h-[700px] bg-cyan-50/60 rounded-full blur-[120px] top-[-200px] left-[-200px]"></div>
@@ -356,4 +357,5 @@ const scrollTo = (id) => {
     });
   }
 };
+  
 </script>
