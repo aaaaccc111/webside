@@ -32,9 +32,6 @@
           <button @click="scrollTo('projects')" class="px-6 py-3 rounded-2xl border border-slate-200 text-slate-600 hover:border-cyan-500 hover:text-cyan-600 transition duration-300 font-semibold hover:scale-105 bg-white/50 backdrop-blur-md">
             專案成就
           </button>
-          <button @click="scrollTo('contact')" class="px-6 py-3 rounded-2xl border border-slate-200 text-slate-600 hover:border-cyan-500 hover:text-cyan-600 transition duration-300 font-semibold hover:scale-105 bg-white/50 backdrop-blur-md">
-            聯絡我
-          </button>
         </div>
       </div>
     </section>
@@ -114,11 +111,6 @@
             </div>
             </div>
 
-            <!-- <div class="p-6 bg-slate-50 border-t border-slate-100 text-right">
-            <button @click="toggleModal" class="px-8 py-2 bg-slate-800 text-white rounded-full hover:bg-slate-700 transition-all shadow-sm">
-                關閉
-            </button>
-            </div> -->
         </div>
         </div>
     </Transition>
