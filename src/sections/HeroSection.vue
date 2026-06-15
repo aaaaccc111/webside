@@ -83,9 +83,9 @@
                 </ul>
                 </div>
 
-                <p>
+                <!-- <p>
                 {{ t('about9') }}
-                </p>
+                </p> -->
 
                 <p>
                 {{ t('about10') }}
@@ -93,19 +93,19 @@
                 <hr class="border-slate-100" />
                 <div>
                 <ul class="space-y-2 pl-4 border-l-2 border-slate-100">
-                    <li>• {{ t('about11') }}</li>
+                    <!-- <li>• {{ t('about11') }}</li> -->
                     <li>• {{ t('about12') }}</li>
-                    <li>• {{ t('about13') }}</li>
+                    <!-- <li>• {{ t('about13') }}</li> -->
                 </ul>
                 </div>
 
-                <p>
+                <!-- <p>
                 {{ t('about14') }}
-                </p>
+                </p> -->
 
-                <p>
+                <!-- <p>
                 {{ t('about15') }}
-                </p>
+                </p> -->
                 <p>
                 {{ t('about16') }}
                 </p>
